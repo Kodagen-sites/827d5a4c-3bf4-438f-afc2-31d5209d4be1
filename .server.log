@@ -1,0 +1,27 @@
+
+> ocean-crown@0.1.0 start
+> next start
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.20.122:3000
+✓ Ready in 138ms
+⚠ `eslint` configuration in next.config.mjs is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.mjs options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+Error: Route "/services/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at createParamsAccessError (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:15484:34)
+    at logDedupedError (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:14462:25)
+    at Object.get (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:15463:21)
+    at <unknown> (.next/server/chunks/ssr/_0kj-jxi._.js:2529:107)
+    at Array.find (<anonymous>)
+    at ServiceDetailPage (.next/server/chunks/ssr/_0kj-jxi._.js:2529:79)
+Error: Route "/services/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at createParamsAccessError (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:15484:34)
+    at logDedupedError (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:14462:25)
+    at Object.get (.next/server/chunks/ssr/[root-of-the-server]__0b-ljvu._.js:15463:21)
+    at <unknown> (.next/server/chunks/ssr/_0kj-jxi._.js:2529:107)
+    at Array.find (<anonymous>)
+    at ServiceDetailPage (.next/server/chunks/ssr/_0kj-jxi._.js:2529:79)
+Killed

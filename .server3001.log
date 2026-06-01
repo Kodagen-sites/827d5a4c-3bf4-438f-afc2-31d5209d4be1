@@ -1,0 +1,13 @@
+
+> ocean-crown@0.1.0 start
+> next start
+
+▲ Next.js 16.2.6
+- Local:         http://localhost:3001
+- Network:       http://172.19.20.122:3001
+✓ Ready in 128ms
+⚠ `eslint` configuration in next.config.mjs is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.mjs options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+Killed

@@ -3,13 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import ScrollCanvas from "@/components/ScrollCanvas";
-import HeroScrollText from "@/components/motion/HeroScrollText";
+import HeroScrollText, { type HeroChapter } from "@/components/motion/HeroScrollText";
 import HeroKeyframes from "./HeroKeyframes";
 import { siteConfig } from "@/content/site-config";
 import { frames } from "@/lib/frames";
 import { img, serviceImage } from "@/lib/assets";
 
 const SNAP_POINTS = [0, 0.12, 0.22, 0.38, 0.58, 0.76, 0.95, 1.0];
+
+const HERO_CHAPTERS = siteConfig.heroChapters as unknown as HeroChapter[];
 
 const SCENE_KEYFRAMES = [
   "scene-1-start",
@@ -46,7 +48,7 @@ export default function HomeClient() {
         >
           <HeroScrollText
             progress={progress}
-            chapters={siteConfig.heroChapters}
+            chapters={HERO_CHAPTERS}
             position="bottom-left"
             textColor="#f4fbfa"
             accentColor="#A8D9D0"
@@ -60,7 +62,7 @@ export default function HomeClient() {
           </div>
         </ScrollCanvas>
       ) : (
-        <HeroKeyframes images={SCENE_KEYFRAMES} chapters={siteConfig.heroChapters} />
+        <HeroKeyframes images={SCENE_KEYFRAMES} chapters={HERO_CHAPTERS} />
       )}
 
       {/* ── Intro ── */}

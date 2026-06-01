@@ -1,0 +1,36 @@
+
+> ocean-crown@0.1.0 gen:videos
+> tsx scripts/generate-videos.ts
+
+
+🎬 Video Generation (platform client → Vertex/Veo)
+
+Found 3 scenes (concurrency=3)
+
+→ scene-3 queued (vertex/veo-3.1-generate-001)
+  polling→ scene-1 queued (vertex/veo-3.1-generate-001)
+  polling→ scene-2 queued (vertex/veo-3.1-generate-001)
+  polling  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: e07111a0-d64c-4e79-b363-d743feefe64d."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 8b08232a-4937-47c5-ae8a-169960264496."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 00c55152-bab9-43eb-a016-e31f8395eb98."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: e07111a0-d64c-4e79-b363-d743feefe64d."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 8b08232a-4937-47c5-ae8a-169960264496."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 00c55152-bab9-43eb-a016-e31f8395eb98."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: e07111a0-d64c-4e79-b363-d743feefe64d."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 8b08232a-4937-47c5-ae8a-169960264496."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 00c55152-bab9-43eb-a016-e31f8395eb98."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: e07111a0-d64c-4e79-b363-d743feefe64d."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 8b08232a-4937-47c5-ae8a-169960264496."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 00c55152-bab9-43eb-a016-e31f8395eb98."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: e07111a0-d64c-4e79-b363-d743feefe64d."}
+✗ scene-3 — POLL_ABORT: poll endpoint failing (HTTP 502) 5× in a row — not waiting out the 10-min deadline
+⚠ VIDEO_FALLBACK scene-3 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 8b08232a-4937-47c5-ae8a-169960264496."}
+✗ scene-1 — POLL_ABORT: poll endpoint failing (HTTP 502) 5× in a row — not waiting out the 10-min deadline
+⚠ VIDEO_FALLBACK scene-1 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 00c55152-bab9-43eb-a016-e31f8395eb98."}
+✗ scene-2 — POLL_ABORT: poll endpoint failing (HTTP 502) 5× in a row — not waiting out the 10-min deadline
+⚠ VIDEO_FALLBACK scene-2 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+---
+Generated 0, skipped 0, failed 3.
+⚠ 3 scene(s) fell back to static posters — build continues (see VIDEO_FALLBACK above).

@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: siteConfig.seo.noindexPaths,
+      disallow: [...siteConfig.seo.noindexPaths],
     },
     sitemap: `${siteConfig.seo.siteUrl}/sitemap.xml`,
   };

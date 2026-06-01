@@ -11,12 +11,13 @@ export function generateStaticParams() {
   return siteConfig.services.map((s) => ({ slug: s.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: Params;
-}): Metadata {
-  const svc = siteConfig.services.find((s) => s.slug === params.slug);
+  params: Promise<Params>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const svc = siteConfig.services.find((s) => s.slug === slug);
   if (!svc) return {};
   return {
     title: svc.name,
@@ -25,8 +26,9 @@ export function generateMetadata({
   };
 }
 
-export default function ServiceDetailPage({ params }: { params: Params }) {
-  const svc = siteConfig.services.find((s) => s.slug === params.slug);
+export default async function ServiceDetailPage({ params }: { params: Promise<Params> }) {
+  const { slug } = await params;
+  const svc = siteConfig.services.find((s) => s.slug === slug);
   if (!svc) notFound();
 
   const others = siteConfig.services.filter((s) => s.slug !== svc.slug).slice(0, 3);
