@@ -1,0 +1,18 @@
+
+> ocean-crown@0.1.0 gen:videos
+> tsx scripts/generate-videos.ts
+
+
+🎬 Video Generation (platform client → Vertex/Veo)
+
+Found 3 scenes (concurrency=3)
+
+✗ scene-3 — start HTTP 429: {"error":"Too many requests — please slow down and try again shortly."}
+⚠ VIDEO_FALLBACK scene-3 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+✗ scene-2 — start HTTP 429: {"error":"Too many requests — please slow down and try again shortly."}
+⚠ VIDEO_FALLBACK scene-2 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+✗ scene-1 — start HTTP 429: {"error":"Too many requests — please slow down and try again shortly."}
+⚠ VIDEO_FALLBACK scene-1 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+---
+Generated 0, skipped 0, failed 3.
+⚠ 3 scene(s) fell back to static posters — build continues (see VIDEO_FALLBACK above).

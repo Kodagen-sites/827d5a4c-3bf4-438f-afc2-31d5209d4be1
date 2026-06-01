@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ScrollCanvas loader + letterbox fill (deep ocean) */
+  --bg-color: #0E3A47;
+  --fg-color: #EAF7F5;
+  /* Hero text palette consumed by HeroScrollText defaults */
+  --color-cream: #f4fbfa;
+  --color-terracotta: #A8D9D0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-color: #EAF7F5;
+    color: #0E3A47;
+    font-family: var(--font-lato), "Lato", sans-serif;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-playfair), "Playfair Display", serif;
+  }
+  ::selection {
+    background: #2E7F8C;
+    color: #EAF7F5;
+  }
+}
+
+@layer components {
+  /* Standard vertical rhythm for inner-page sections */
+  .section-pad {
+    padding-top: clamp(48px, 6vw, 96px);
+    padding-bottom: clamp(48px, 6vw, 96px);
+  }
+}
+
+/* Subtle ocean-tinted scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #EAF7F5; }
+::-webkit-scrollbar-thumb { background: #A8D9D0; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #2E7F8C; }

@@ -1,0 +1,7 @@
+{
+  "frameCount": 0,
+  "frameDir": "",
+  "frameUrlTemplate": "/frames/frame-{NNNN}.jpg",
+  "fps": 12,
+  "width": 1600
+}

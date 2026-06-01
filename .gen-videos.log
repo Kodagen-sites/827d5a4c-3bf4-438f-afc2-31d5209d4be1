@@ -1,0 +1,30 @@
+
+> ocean-crown@0.1.0 gen:videos
+> tsx scripts/generate-videos.ts
+
+
+🎬 Video Generation (platform client → Vertex/Veo)
+
+Found 3 scenes (concurrency=3)
+
+→ scene-3 queued (vertex/veo-3.1-generate-001)
+  polling→ scene-1 queued (vertex/veo-3.1-generate-001)
+  polling  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: ea36ee67-74c0-4489-a768-f3e9a1f0ff1e."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 3a028733-aeeb-4c69-a46a-115976a94bc6."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: ea36ee67-74c0-4489-a768-f3e9a1f0ff1e."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 3a028733-aeeb-4c69-a46a-115976a94bc6."}
+✗ scene-2 — start HTTP 502: {"error":"generation failed to start on both providers","primary":"aistudio","primaryError":"{\"error\":{\"code\":429,\"message\":\"Your prepayment credits are depleted. Please go to AI Studio at http
+⚠ VIDEO_FALLBACK scene-2 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: ea36ee67-74c0-4489-a768-f3e9a1f0ff1e."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 3a028733-aeeb-4c69-a46a-115976a94bc6."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: ea36ee67-74c0-4489-a768-f3e9a1f0ff1e."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 3a028733-aeeb-4c69-a46a-115976a94bc6."}
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: ea36ee67-74c0-4489-a768-f3e9a1f0ff1e."}
+✗ scene-3 — POLL_ABORT: poll endpoint failing (HTTP 502) 5× in a row — not waiting out the 10-min deadline
+⚠ VIDEO_FALLBACK scene-3 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+  poll HTTP 502: {"done":true,"error":"generation failed","code":13,"detail":"Internal error. Please try again later. Operation ID: 3a028733-aeeb-4c69-a46a-115976a94bc6."}
+✗ scene-1 — POLL_ABORT: poll endpoint failing (HTTP 502) 5× in a row — not waiting out the 10-min deadline
+⚠ VIDEO_FALLBACK scene-1 → static poster (start keyframe). Build the hero as static-imagery, not ScrollCanvas.
+---
+Generated 0, skipped 0, failed 3.
+⚠ 3 scene(s) fell back to static posters — build continues (see VIDEO_FALLBACK above).

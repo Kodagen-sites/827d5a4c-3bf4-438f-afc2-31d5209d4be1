@@ -1,0 +1,32 @@
+{
+  "bucket": "site-assets",
+  "projectId": "827d5a4c-3bf4-438f-afc2-31d5209d4be1",
+  "ref": "",
+  "images": {
+    "scene-1-start": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-1-start.png",
+    "scene-2-end": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-2-end.png",
+    "scene-2-start": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-2-start.png",
+    "scene-3-start": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-3-start.png",
+    "scene-1-end": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-1-end.png",
+    "scene-3-end": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-3-end.png",
+    "og-image": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/og-image.png",
+    "section-contact": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/section-contact.png",
+    "section-services": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/section-services.png",
+    "section-work": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/section-work.png",
+    "service-bespoke-itineraries": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-bespoke-itineraries.png",
+    "service-concierge": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-concierge.png",
+    "service-motor-yacht": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-motor-yacht.png",
+    "section-about": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/section-about.png",
+    "service-superyacht": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-superyacht.png",
+    "service-sailing-yacht": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-sailing-yacht.png",
+    "service-corporate-events": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/service-corporate-events.png"
+  },
+  "videos": {},
+  "frames": {},
+  "updatedAt": "2026-06-01T21:06:41.412Z",
+  "videoFallbacks": {
+    "scene-2": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-2-start.png",
+    "scene-3": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-3-start.png",
+    "scene-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/827d5a4c-3bf4-438f-afc2-31d5209d4be1/images/scene-1-start.png"
+  }
+}
